@@ -1,0 +1,165 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project {
+    background-color: #def2f1;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1200px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.project p {
+    margin: 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.section-container {
+    background-color: #3aafa9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1200px;
+    cursor: pointer;
+}
+
+.section-container h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding:30px;
+    color: #feffff;
+}
+
+.container-banner {
+    background-color: #2b7a78;
+    width: 1240px;
+    position: relative;
+    top: -20px; /* Adjust the value as needed to control the overlap */
+    margin-bottom: -20px; /* Adjust the value to compensate for the overlap */
+    z-index: 1; /* Ensure it appears above other content */
+    margin-left:-20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+header {
+    background-color: #3aafa9; /* Set your desired background color for the header */
+    color: #feffff; /* Set text color */
+    text-align: center;
+    padding: 40px 0; /* Adjust padding as needed */
+    margin-top: 0; /* Remove any existing margin-top */
+}
+
+footer {
+    text-align: center;
+}
+
+nav {
+    background-color: #333; /* Background color for the navigation bar */
+    height: 80px; /* Adjust the height as desired */
+    width: 100%; /* Make the navigation bar stretch across the whole screen */
+    display: flex;
+    justify-content: center; /* Center-align the links horizontally */
+    align-items: center; /* Center-align the links vertically */
+    position: relative; /* Add relative positioning */
+    z-index: 1000;
+    left: 0; /* Add this line to reset the left position */
+    right: 0; /* Add this line to reset the right position */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; /* Display list items in a row */
+    margin: 0 60px; /* Add spacing between the links */
+}
+
+nav li:hover {
+    color: #3aafa9; /* Change color on hover */
+}
+
+nav a {
+    text-decoration: none;
+    color: #feff; /* Link color */
+    font-weight: bold; /* Make the links bold, adjust as needed */
+    font-size: 25px; /* Adjust the font size as needed */
+    padding: 30px;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #feffff;
+}
+
+.extra-content {
+    display: none; /* Initially hide extra content */
+}
+
+.sub-card {
+    background-color: #ECEBEA;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    margin: 0 auto; /* Center the card horizontally */
+    margin-bottom: 20px;
+    width: 90%; /* Adjust the width as desired */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.section-description p {
+    color: #feffff;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-container h2 {
+    color: #feffff;
+    margin-left: -10px
+}
+
+.project-description p {
+    color: #17252a;
+    padding: 10px;
+}
+
+.project-card {
+    padding: 10px;
+}
+
+.project-card h3 {
+    color:#17252a;
+    padding: 10px;
+}
+
+.project-card p {
+    padding:10px;
+}
+
+.about-me {
+    margin-top: 20px;
+}

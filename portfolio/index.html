@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link an external CSS file here -->
+</head>
+<body>
+    <header>
+        <h1>Austin Rich</h1>
+        <p>Code Being | Designs Things | Thinker</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class ="nav-option nav-option-about-me"><a href="#about">About</a></li>
+            <li class ="nav-option nav-option-projects"><a href="#projects">Projects</a></li>
+            <li class ="nav-option nav-option-contact-me"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section-container about-me">
+            <div class="container-banner">
+                <h2>About Me</h2>
+            </div>
+            <div class="section-description">
+                <p>Strong foundations in coding from formal education to hands on training.</p>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>Full Stack Development</h3>
+                <p><i>Background in full stack development with a focus on test driven development</i></p>
+                <div class="extra-content project-description">
+                    <p>Developed automated tests using xUnit framework to enhance the quality of an existing production application to increase the code coverage. Refactored existing classes and their functions to follow test driven development and attain full code coverage of the class. Tested various API endpoints of the application using Postman to ensure the application responds properly. Worked within a scrum team and participated in stand-up meetings to breakdown work into itemized tasks and improve development of unit tests.</p>
+                </div>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>Cognixia JUMP</h3>
+                <p><i>Hands on experience using Java, Spring Boot, MySQL, and AWS</i></p>
+                <div class="extra-content project-description">
+                    <p>Cognixia’s JUMP program is a hyper-intense technical training program that gives top STEM talent from across the U.S. the equivalent of 12-18 months of industry experience. Not only do they up-skill their technical abilities, they also evolve their digital mindset to successfully adapt and utilize technology in an efficient manner so they can JUMP start their careers via deployment with Collabera clients.</p>
+                </div>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>University of Washington - Bothell</h3>
+                <p>Completed a bachelor's in Computer Science and Software Engineering</p>
+                <div class="extra-content project-description">
+                    <p>Finished University of Washington - Bothell's 2 year computer science program where I worked with various programming languages such as C++, Python, and Java. The program covered fundamental computer science topics such as data structures and algorithms, operating systems, and hardware.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects" class="section-container expandable-card projects">
+            <div class="container-banner">    
+                <h2>Projects</h2>
+            </div>
+            <div class="section-description">
+                <p>Some of my favorite projects to showcase my knowledge in technologies.</p>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>Pokemon Team Builder</h3>
+                <p><i>Build a team of Pokemon and analyze team stats via PokeAPI calls</i> | GitHub URL</p>
+                <div class="extra-content project-description">
+                    <p>Spring Boot application hosted on AWS that allows users to log in and create teams of Pokemon via API calls to the PokeAPI. Application stores user and Pokemon data in a SQL database to perform analytics on user's team such as what Pokemon Types the team is strong or weak against.</p>
+                    <p><u>Technologies Used:</u> Java, Eclipse, Spring, MySQL, AWS, PokeAPI</p>
+                </div>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>Cut Detector</h3>
+                <p><i>Detects cuts present in a video file and prints out a video timeline with the deleted cuts marked</i> | Webapp Link | GitHub URL</p>
+                <div class="extra-content project-description">
+                    <p>Utilized OpenCV to scan a video file and store each frame in a linked list to compare each frame's color values. Created functionalities that computes and displays a color histogram for each frame as video plays and outputs a file of video timeline with cuts marked.</p>
+                    <p><u>Technologies Used:</u> C#, Visual Studio, OpenCV</p>
+                </div>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>Inventory Tracker</h3>
+                <p><i>Inventory tracking application that stores customer and inventory data</i> | Webapp Link | GitHub URL</p>
+                <div class="extra-content project-description">
+                    <p>Designed an inventory tracker with CRUD functionality that reads customer data, inventory data, and commmands from a text file to perform operations. Used two data structures to store data process by application: a binary search tree to store movies and used a hash table to store customer information.</p>
+                    <p><u>Technologies Used:</u> C#, Visual Studio</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="section-container contact-me">
+            <div class="container-banner">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="section-description">
+                <p>You can provide your contact information or a contact form here.</p>
+            </div>
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>LinkedIn</h3>
+                <p>LinkedIn URL</p>
+                <div class="extra-content project-description">
+                    <p>Get in touch with my on LinkedIn.</p>
+                </div>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>GitHub</h3>
+                <p>GitHub URL</p>
+                <div class="extra-content project-description">
+                    <p>Repository to my different projects.</p>
+                </div>
+            </div>
+
+            <div class="project-card expandable-card sub-card extra-content">
+                <h3>Instagram</h3>
+                <p>Instagram URL</p>
+                <div class="extra-content project-description">
+                    <p>Showcase my different hobbies such as art and outdoors.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Austin</p>
+    </footer>
+    <script>
+        const majorCards = document.querySelectorAll(".section-container");
+        majorCards.forEach(function(card) {
+            card.addEventListener("click", function(e) {
+                toggleMajorCard(card);
+            });
+        })
+
+        const subCards = document.querySelectorAll(".sub-card");
+        subCards.forEach(function(card) {
+            card.addEventListener("click", function(e) {
+                e.stopPropagation();
+                toggleMinorCard(card);
+            });
+        });
+
+        // const navOptions = document.querySelectorAll(".nav-option");
+        // navOptions.forEach(function(option) {
+        //     option.addEventListener("click", function(e) {
+        //         toggleMajorCard(document.querySelector())
+        //     })
+        // })
+
+        const navOptionAbout = document.querySelector(".nav-option-about-me")
+        navOptionAbout.addEventListener("click", function() {
+            const test = document.querySelector(".about-me");
+            toggleMajorCard(test)
+        });
+
+        const navOptionProjects = document.querySelector(".nav-option-projects")
+        navOptionProjects.addEventListener("click", function() {
+            toggleMajorCard(document.querySelector(".projects"))
+        });
+
+        const navOptionContact = document.querySelector(".nav-option-contact-me")
+        navOptionContact.addEventListener("click", function() {
+            toggleMajorCard(document.querySelector(".contact-me"))
+        });
+
+        function toggleMajorCard(majorCard) {
+            const minorCards = majorCard.querySelectorAll(".project-card");
+
+            if (minorCards) {
+                minorCards.forEach(function(card) {
+                    if (card.style.display == "none" || card.style.display == "") {
+                        card.style.display = "block";
+                    }
+                    else {
+                        card.style.display = "none";
+                    }
+                });
+            }
+        }
+
+        function toggleMinorCard(minorCard) {
+            const descriptions = minorCard.querySelectorAll(".project-description");
+
+            if (descriptions) {
+                descriptions.forEach(function(desc) {
+                    if (desc.style.display == "none" || desc.style.display == "") {
+                        desc.style.display = "block";
+                    }
+                    else {
+                        desc.style.display = "none";
+                    }
+                })
+            }
+        }
+
+        const nav = document.querySelector('nav');
+        const headerHeight = document.querySelector('header').offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY > headerHeight) {
+                nav.style.position = 'fixed';
+                nav.style.top = '0';
+            } else {
+                nav.style.position = 'relative';
+            }
+        });
+    </script>
+</body>
+</html>

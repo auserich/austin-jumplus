@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 250px;
+    width: 600px;
+    background: #faeee7;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.furniture-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 55px;
+    width: 1200px;
+    background: #faeee7;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-body {
+    text-align: center;
+    background: #fffffe;
+}
+
+/* Add this to your FurnitureCatalogue.css */
+.card-img-container {
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow its container */
+    height: 0; /* Set initial height to 0 */
+    padding-bottom: 100%; /* Maintain aspect ratio (1:1) */
+  }
+
+.card-img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the image width to 100% of the container */
+    height: 100%; /* Set the image height to 100% of the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    transition: transform 0.2s;
+}
+  
+.card-img-container:hover img {
+    transform: scale(1.1); /* Increase scale on hover for the image */
+}
+  
+.add-to-cart-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff8ba7;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: 500;
+}
+  
+.card-img-container:hover .add-to-cart-button {
+    opacity: 1; /* Show the button on hover */
+}
+
+.no-results {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: red; /* Adjust the color as needed */
+}
+
+.card-text {
+    color: #33272a !important;
+}
+
+.card-title {
+    color: #33272a !important;
+}
+
+.catalogue-text {
+    color: #33272a;
+    font-size: 48px;
+    font-weight: 700;
+}

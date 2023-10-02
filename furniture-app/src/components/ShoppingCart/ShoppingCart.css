@@ -1,0 +1,119 @@
+/* .cart-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  } */
+  .cart-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  /* .cart-item-name {
+    font-weight: bold;
+  } */
+  .cart-item-name {
+    flex-grow: 1;
+    font-weight: bold;
+  }
+  
+  /* .cart-item-price {
+    color: #777;
+  } */
+
+  .shopping-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 20px;
+  }
+
+  .cart-buttons {
+    display: flex;
+    justify-content: space-between; /* Align buttons at each end */
+    width: 100%; /* Full width for button container */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    /* Additional styles for the button container */
+  }
+
+  .clear-cart {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .cart-button {
+    background-color: #f995af;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .cart-button.disabled {
+    background-color: #ccc; /* Gray background */
+    color: #666; /* Gray text color */
+    cursor: not-allowed; /* Change cursor to 'not-allowed' */
+  }
+
+  .cart-button:not([disabled]):hover {
+    background-color: hsl(330, 70%, 80%); /* Brighter shade of pink */
+    color: #fff; /* Bright text color */
+  }
+
+  .cart-item-remove {
+    cursor: pointer;
+    font-size: 20px;
+    color: #797979;
+    margin-right: 20px;
+    padding: 0 5px;
+  }
+
+  .cart-item-remove:hover {
+    transform: scale(1.2);
+  }
+
+  .cart-item-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+    margin-right: 20px; /* Add spacing between image and details */
+  }
+
+  .cart-item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Arrange Name above Price */
+  }
+
+  .cart-item-name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add spacing between Name and Price */
+  }
+
+  .cart-item-price {
+    font-size: 18px; /* Adjust font size as needed */
+  }
+
+  .cart-item-container {
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    margin-bottom: 1rem;
+    margin-left: 5px;
+  }

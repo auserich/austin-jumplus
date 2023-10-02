@@ -1,0 +1,14 @@
+.order-history {
+    margin-top: 20px;
+  }
+  
+  .order-container {
+    background-color: #f2f2f2; /* Gray background for each order */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+.container {
+  margin-top: 250px;
+}
