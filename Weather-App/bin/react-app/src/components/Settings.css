@@ -1,0 +1,40 @@
+  .Settings .lander {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .Settings .lander h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+
+  .Settings .rendered {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .Settings .rendered1 {
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .Settings .rendered2 {
+    padding: 10px 0;
+    text-align: center;
+    justify-content: end;
+  }
+
+  .Settings .spacing {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .Settings .flexbox-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .Settings .rendered h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
