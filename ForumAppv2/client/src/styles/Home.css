@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+/* body {
+	background-image: url("../assets/background.jpg");
+	background-size: cover; 
+	background-position: center center;
+	background-attachment: fixed; 
+} */
+
+input {
+	padding: 10px 20px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.home,
+.modal {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 30px;
+}
+
+.homeTitle {
+	margin-bottom: 30px;
+}
+
+.homeBtn,
+.modalBtn {
+	display: block;
+	width: 200px;
+	padding: 15px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fffbf5;
+	background-color: #0f5553;
+	margin-bottom: 15px;
+}
+
+.homeForm {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin-bottom: 30px;
+}
+.home__container {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+}
+
+.homeBtn {
+	margin-bottom: 0px;
+}
+
+.thread__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 10px;
+}
+.thread__item {
+	padding: 10px;
+	width: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.thread__item p {
+	margin-bottom: 0 !important;
+	font-size: 20px;
+}
+.thread {
+	height: 100px;
+	align-items: center;
+}
+.navbar {
+	width: 100%;
+	padding: 10px 20px;
+	background-color: #1bb3ae;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar > h2 {
+	color: #fffbf5;
+}
+.navbarRight {
+	display: flex;
+	align-items: center;
+}
+.navbarRight > button {
+	padding: 15px;
+	width: 150px;
+	background-color: #085755;
+	color: #fffbf5;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	margin-left: 15px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.thread__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px;
+}
+
+.likes__container {
+	display: flex;
+	align-items: center;
+	margin-right: 25px;
+}
+.likesBtn {
+	height: 30px;
+	color: #e83283;
+	cursor: pointer;
+}
+.react__container {
+	display: flex;
+	align-items: center;
+}
+
+.button-col.col {
+	flex: 0 0 200px;
+	display: flex;
+	justify-content: flex-end;
+	width: 180px;
+}
+
+.thread-button {
+	width: 180px;
+	height: 50px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.input-thread-title.form-control {
+	width: 100%;
+}
+
+.mb-3 {
+	width: 100%;
+}
+
+.container-title {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+
+.container-title.h5 {
+	font-size: 32px;
+}
+
+.create-thread-container {
+	width: 1320px;
+	margin-top: 160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thread-container {
+	width: 1320px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.thread-title {
+	margin-bottom: 32px;
+}
+
+.form-control {
+	box-shadow: 0 0 1px 1px #ffffff;
+}
+
+.thread:hover {
+	border: 1px solid #fff; /* Add a white border */
+	border-radius: 10px;
+	cursor: pointer; /* Change the cursor to indicate interactivity */
+}

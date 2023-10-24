@@ -1,0 +1,30 @@
+.test {
+	width: 30rem;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 10px !important;
+	margin: auto;
+	margin-top: 260px;
+}
+
+.mb-3 {
+	width: 20rem;
+}
+
+.testTitle.card-title {
+	text-align: center;
+}
+
+.registerInput {
+	margin-bottom: 30px;
+}
+
+.testTitle.h5 {
+	font-size: 2.25rem;
+	margin-bottom: 1rem;
+}
+
+.registerButton {
+	margin-top: 14px;
+}
